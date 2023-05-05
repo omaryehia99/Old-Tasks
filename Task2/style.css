@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+*,
+*::before,
+*::after {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Inter', sans-serif;
+}
+
+:root {
+    --dark-blue: hsl(232, 66%, 49%);
+    --baby-blue: hsl(211, 100%, 48%);
+    --off-white: hsl(36, 100%, 99%);
+    --grayish-blue: hsl(216, 100%, 83%);
+  }
+
+
+  nav{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--baby-blue);
+  }
+  nav a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 800;
+    color:var(--off-white) ;
+    margin-right: 20px;
+  }
+  nav p {
+    color: var(--off-white);
+    font-size: 20px;
+    font-weight: 800;
+  }
+
+  .hero-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .first-section{
+    display: flex;
+    height: 300px;
+    justify-content: space-evenly;
+    gap: 5px;
+    background-color: var(--dark-blue);
+    
+  }
+  .intro{
+    margin-top: 20px;
+    align-self:flex-start;
+    margin-left: 300px;
+    color: var(--off-white);
+  }
+  .first-section .intro h1 {
+    margin-bottom: 20px;
+    font-weight: 800;
+    font-size: 40px;
+  }
+  .first-section .intro p {
+    font-size: 14px;
+    line-height: 150%;
+    width: 105%;
+  }
+  .track .logo {
+    margin-right: 320px;
+    margin-top: 40px;
+    max-height: 300px;
+    width: 400px;
+  }
+  
+  .second-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: var(--grayish-blue);
+    height: 400px;
+  }
+.second-section .card {
+    display: flex;
+    margin-top: 20px;
+    margin-right: 20px;
+    border-radius: 5%;
+    gap: 10px;
+    height: 39%;
+    width: 19%;
+    background-color: var(--dark-blue);
+    color: var(--off-white);
+    box-shadow: 1px 1px #000000;
+}
+.second-section .card img {
+    margin-top: 30px;
+    margin-left: 15px;
+    height: 20px;
+    width: 20px;
+}
+.card .header {
+    margin-right: 50px;
+    margin-top: 30px;
+}
+.card .header h3{
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: 800;
+}
+.card .header p {
+    width: 115%;
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    
+}
